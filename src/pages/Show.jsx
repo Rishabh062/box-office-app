@@ -20,17 +20,17 @@ const Show = () => {
         <ShowPageWrapper> 
             <ShowMainData image={show.image} name={show.name} rating={show.rating} summary={show.summary} tags= {show.genres} />
             <InfoBlock>
-                <h2>This is details</h2>
+                <h2>Details</h2>
                 <Details status={show.status} network={show.network} premiered={show.premiered} />
             </InfoBlock>
 
             <InfoBlock>
-                <h2>This is seasons</h2>
+                <h2>Seasons</h2>
                 <Seasons seasons={show._embedded.seasons}/>
             </InfoBlock>
 
             <InfoBlock>
-                <h2>This is cast</h2>
+                <h2>Cast</h2>
                 <Cast cast={show._embedded.cast}/>
             </InfoBlock>
         
